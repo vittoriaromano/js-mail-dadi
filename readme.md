@@ -26,6 +26,6 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 
 - Stabilire il vincitore, in base a chi fa il punteggio più alto.
-// controntiamo i duei numeri
+// confrontiamo duei numeri
 //se l'user ha il numero piu grande stampa: hai vinto
 //se l'user ha il numero piu piccolo stampa: hai perso
