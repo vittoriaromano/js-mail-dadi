@@ -9,19 +9,30 @@ const mail3 = ('ciao@outyahoo.com');
 const vipEmail = [mail1, mail2, mail3];
 console.log(vipEmail)
 
-//promt con la domanda, email dell'user
 
+//promt con la domanda, email dell'user
 let question = prompt('what is your email?');
 console.log(question)
 
-//accertati che abbia scritto una email, in caso ricomincia
-if(question.value === "" || question.value === null){  //non mi funziona alert :)
-    alert('required email');
-}
+let  entra = false
 
 //confrontiamo l'email scritta dall'utente con la nostra lista vip
-if(question.value === vipEmail ){
-    console.log('si')
-}else if(question.value !== vipEmail){
-    console.log('no')
+for (let i = 0; i < vipEmail.length; i++){
+    const email = vipEmail[i];
+    if ( email === question){
+        let entra = true;
+    }
 }
+//se l'email fa parte della lista vip stampa : si
+//se l'email non fa parte della lista stampa: no 
+if (entra === true){
+    alert('si')
+}else{
+    alert('no')
+}
+
+
+
+
+
+
