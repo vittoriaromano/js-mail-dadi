@@ -14,12 +14,12 @@ console.log(vipEmail)
 let question = prompt('what is your email?');
 console.log(question)
 
-let  entra = false
+let entra = false
 
 //confrontiamo l'email scritta dall'utente con la nostra lista vip
 for (let i = 0; i < vipEmail.length; i++){
     const email = vipEmail[i];
-    if ( email === question.value){
+    if ( email === question){
         entra = true;
     }
 }
