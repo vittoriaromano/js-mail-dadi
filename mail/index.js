@@ -19,8 +19,8 @@ let  entra = false
 //confrontiamo l'email scritta dall'utente con la nostra lista vip
 for (let i = 0; i < vipEmail.length; i++){
     const email = vipEmail[i];
-    if ( email === question){
-        let entra = true;
+    if ( email === question.value){
+        entra = true;
     }
 }
 //se l'email fa parte della lista vip stampa : si
